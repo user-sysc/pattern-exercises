@@ -1,0 +1,357 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Despues - Con Abstract Factory" id="uml-despues-sillas">
+    <mxGraphModel dx="3475" dy="2097" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="main" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Main" vertex="1">
+          <mxGeometry height="64" width="200" x="-140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="main-sep" parent="main" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="main-methods" parent="main" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ main(args: String[]): void" vertex="1">
+          <mxGeometry height="30" width="200" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Cliente" vertex="1">
+          <mxGeometry height="138" width="380" x="140" y="-7" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente-attrs" parent="cliente" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;- silla: Silla&lt;/div&gt;&lt;div&gt;- sofa: Sofa&lt;/div&gt;&lt;div&gt;- mesilla: Mesilla&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="380" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente-sep" parent="cliente" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="380" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente-methods" parent="cliente" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;+ Cliente(factory: MuebleFactory)&lt;/div&gt;&lt;div&gt;+ amoblarSala(): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="44" width="380" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="if-factory" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;br&gt;MuebleFactory" vertex="1">
+          <mxGeometry height="120" width="420" x="330" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="if-factory-sep" parent="if-factory" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="420" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="if-factory-methods" parent="if-factory" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;+ crearSilla(): Silla&lt;/div&gt;&lt;div&gt;+ crearSofa(): Sofa&lt;/div&gt;&lt;div&gt;+ crearMesilla(): Mesilla&lt;/div&gt;" vertex="1">
+          <mxGeometry height="72" width="420" y="48" as="geometry" />
+        </mxCell>
+        <mxCell id="f-moderna" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="FactoryModerna" vertex="1">
+          <mxGeometry height="106" width="240" x="70" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="f-moderna-sep" parent="f-moderna" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="f-moderna-methods" parent="f-moderna" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;+ crearSilla(): Silla&lt;/div&gt;&lt;div&gt;+ crearSofa(): Sofa&lt;/div&gt;&lt;div&gt;+ crearMesilla(): Mesilla&lt;/div&gt;" vertex="1">
+          <mxGeometry height="72" width="240" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="f-victoriana" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="FactoryVictoriana" vertex="1">
+          <mxGeometry height="106" width="240" x="380" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="f-victoriana-sep" parent="f-victoriana" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="f-victoriana-methods" parent="f-victoriana" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;+ crearSilla(): Silla&lt;/div&gt;&lt;div&gt;+ crearSofa(): Sofa&lt;/div&gt;&lt;div&gt;+ crearMesilla(): Mesilla&lt;/div&gt;" vertex="1">
+          <mxGeometry height="72" width="240" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="f-artdeco" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="FactoryArtDeco" vertex="1">
+          <mxGeometry height="106" width="240" x="710" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="f-artdeco-sep" parent="f-artdeco" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="f-artdeco-methods" parent="f-artdeco" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;+ crearSilla(): Silla&lt;/div&gt;&lt;div&gt;+ crearSofa(): Sofa&lt;/div&gt;&lt;div&gt;+ crearMesilla(): Mesilla&lt;/div&gt;" vertex="1">
+          <mxGeometry height="72" width="240" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="if-silla" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;br&gt;Silla" vertex="1">
+          <mxGeometry height="80" width="240" x="60" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="if-silla-sep" parent="if-silla" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="if-silla-methods" parent="if-silla" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ sentarse(): String" vertex="1">
+          <mxGeometry height="30" width="240" y="48" as="geometry" />
+        </mxCell>
+        <mxCell id="if-sofa" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;br&gt;Sofa" vertex="1">
+          <mxGeometry height="80" width="240" x="380" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="if-sofa-sep" parent="if-sofa" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="if-sofa-methods" parent="if-sofa" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ recostarse(): String" vertex="1">
+          <mxGeometry height="30" width="240" y="48" as="geometry" />
+        </mxCell>
+        <mxCell id="if-mesilla" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;br&gt;Mesilla" vertex="1">
+          <mxGeometry height="80" width="240" x="700" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="if-mesilla-sep" parent="if-mesilla" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="if-mesilla-methods" parent="if-mesilla" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ colocar(): String" vertex="1">
+          <mxGeometry height="30" width="240" y="48" as="geometry" />
+        </mxCell>
+        <mxCell id="c-m-silla" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="SillaModerna" vertex="1">
+          <mxGeometry height="64" width="240" x="60" y="694" as="geometry" />
+        </mxCell>
+        <mxCell id="c-m-silla-sep" parent="c-m-silla" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c-m-silla-methods" parent="c-m-silla" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ sentarse(): String" vertex="1">
+          <mxGeometry height="30" width="240" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="c-m-sofa" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="SofaModerno" vertex="1">
+          <mxGeometry height="64" width="240" x="380" y="694" as="geometry" />
+        </mxCell>
+        <mxCell id="c-m-sofa-sep" parent="c-m-sofa" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c-m-sofa-methods" parent="c-m-sofa" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ recostarse(): String" vertex="1">
+          <mxGeometry height="30" width="240" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="c-m-mesilla" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="MesillaModerna" vertex="1">
+          <mxGeometry height="64" width="240" x="700" y="694" as="geometry" />
+        </mxCell>
+        <mxCell id="c-m-mesilla-sep" parent="c-m-mesilla" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c-m-mesilla-methods" parent="c-m-mesilla" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ colocar(): String" vertex="1">
+          <mxGeometry height="30" width="240" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="c-v-silla" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="SillaVictoriana" vertex="1">
+          <mxGeometry height="64" width="240" x="60" y="784" as="geometry" />
+        </mxCell>
+        <mxCell id="c-v-silla-sep" parent="c-v-silla" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c-v-silla-methods" parent="c-v-silla" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ sentarse(): String" vertex="1">
+          <mxGeometry height="30" width="240" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="c-v-sofa" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="SofaVictoriano" vertex="1">
+          <mxGeometry height="64" width="240" x="380" y="784" as="geometry" />
+        </mxCell>
+        <mxCell id="c-v-sofa-sep" parent="c-v-sofa" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c-v-sofa-methods" parent="c-v-sofa" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ recostarse(): String" vertex="1">
+          <mxGeometry height="30" width="240" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="c-v-mesilla" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="MesillaVictoriana" vertex="1">
+          <mxGeometry height="64" width="240" x="700" y="784" as="geometry" />
+        </mxCell>
+        <mxCell id="c-v-mesilla-sep" parent="c-v-mesilla" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c-v-mesilla-methods" parent="c-v-mesilla" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ colocar(): String" vertex="1">
+          <mxGeometry height="30" width="240" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="c-a-silla" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="SillaArtDeco" vertex="1">
+          <mxGeometry height="64" width="240" x="60" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="c-a-silla-sep" parent="c-a-silla" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c-a-silla-methods" parent="c-a-silla" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ sentarse(): String" vertex="1">
+          <mxGeometry height="30" width="240" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="c-a-sofa" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="SofaArtDeco" vertex="1">
+          <mxGeometry height="64" width="240" x="380" y="874" as="geometry" />
+        </mxCell>
+        <mxCell id="c-a-sofa-sep" parent="c-a-sofa" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c-a-sofa-methods" parent="c-a-sofa" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ recostarse(): String" vertex="1">
+          <mxGeometry height="30" width="240" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="c-a-mesilla" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="MesillaArtDeco" vertex="1">
+          <mxGeometry height="64" width="240" x="700" y="874" as="geometry" />
+        </mxCell>
+        <mxCell id="c-a-mesilla-sep" parent="c-a-mesilla" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c-a-mesilla-methods" parent="c-a-mesilla" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ colocar(): String" vertex="1">
+          <mxGeometry height="30" width="240" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="e-main-cliente" edge="1" parent="1" source="main" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=open;endFill=0;dashed=1;dashPattern=8 8;" target="cliente" value="«usa»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-cliente-factory" edge="1" parent="1" source="cliente" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.518;entryY=0.004;entryDx=0;entryDy=0;endArrow=open;endFill=0;dashed=1;dashPattern=8 8;entryPerimeter=0;" target="if-factory" value="«uses»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520.03" y="59" />
+              <mxPoint x="550.03" y="59" />
+              <mxPoint x="550.03" y="60.03" />
+              <mxPoint x="547.63" y="60.03" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-impl-f-moderna" edge="1" parent="1" source="f-moderna" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.002;entryY=0.213;entryDx=0;entryDy=0;endArrow=block;endFill=0;dashed=1;dashPattern=8 8;entryPerimeter=0;" target="if-factory-methods">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="190.03" y="213.34" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-impl-f-victoriana" edge="1" parent="1" source="f-victoriana" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;dashed=1;dashPattern=8 8;" target="if-factory">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-impl-f-artdeco" edge="1" parent="1" source="f-artdeco" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;dashed=1;dashPattern=8 8;" target="if-factory">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-create-m-silla" edge="1" parent="1" source="f-moderna-methods" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.001;exitY=0.794;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=open;endFill=0;dashed=1;dashPattern=8 8;exitPerimeter=0;" target="c-m-silla" value="«create»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-9.97" y="401.23" />
+              <mxPoint x="-9.97" y="726.03" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-create-m-sofa" edge="1" parent="1" source="f-moderna" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=open;endFill=0;dashed=1;dashPattern=8 8;" target="c-m-sofa-methods" value="«create»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="190.03" y="490.03" />
+              <mxPoint x="330.03" y="490.03" />
+              <mxPoint x="330.03" y="743" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-create-m-mesilla" edge="1" parent="1" source="f-moderna" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.8;exitY=1;exitDx=0;exitDy=0;endArrow=open;endFill=0;dashed=1;dashPattern=8 8;" target="c-m-mesilla" value="«create»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="262.03" y="440.03" />
+              <mxPoint x="260.03" y="440.03" />
+              <mxPoint x="260.03" y="470.03" />
+              <mxPoint x="970.03" y="470.03" />
+              <mxPoint x="970.03" y="730.03" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-create-v-silla" edge="1" parent="1" source="f-victoriana" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.2;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;endArrow=open;endFill=0;dashed=1;dashPattern=8 8;" target="c-v-silla" value="«create»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="418.03" y="436.03" />
+              <mxPoint x="418.03" y="450.03" />
+              <mxPoint x="320.03" y="450.03" />
+              <mxPoint x="320.03" y="832.03" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-create-v-sofa" edge="1" parent="1" source="f-victoriana" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;endArrow=open;endFill=0;dashed=1;dashPattern=8 8;" target="c-v-sofa" value="«create»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490.03" y="436.03" />
+              <mxPoint x="490.03" y="460.03" />
+              <mxPoint x="640.03" y="460.03" />
+              <mxPoint x="640.03" y="800.03" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-create-v-mesilla" edge="1" parent="1" source="f-victoriana" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.8;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;endArrow=open;endFill=0;dashed=1;dashPattern=8 8;" target="c-v-mesilla" value="«create»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="562.03" y="436.03" />
+              <mxPoint x="562.03" y="450.03" />
+              <mxPoint x="650.03" y="450.03" />
+              <mxPoint x="650.03" y="832.03" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-create-a-silla" edge="1" parent="1" source="f-artdeco" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.2;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=open;endFill=0;dashed=1;dashPattern=8 8;" target="c-a-silla" value="«create»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="758.03" y="460.03" />
+              <mxPoint x="950.03" y="460.03" />
+              <mxPoint x="950.03" y="970.03" />
+              <mxPoint x="180.03" y="970.03" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-create-a-sofa" edge="1" parent="1" source="f-artdeco-methods" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1.007;exitY=0.824;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=open;endFill=0;dashed=1;dashPattern=8 8;exitPerimeter=0;" target="c-a-sofa" value="«create»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="951.69" y="420.03" />
+              <mxPoint x="980.03" y="420.03" />
+              <mxPoint x="980.03" y="950.03" />
+              <mxPoint x="500.03" y="950.03" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-create-a-mesilla" edge="1" parent="1" source="f-artdeco" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.8;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;endArrow=open;endFill=0;dashed=1;dashPattern=8 8;" target="c-a-mesilla" value="«create»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="902.03" y="450.03" />
+              <mxPoint x="960.03" y="450.03" />
+              <mxPoint x="960.03" y="890.03" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-impl-m-silla" edge="1" parent="1" source="c-m-silla-sep" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=block;endFill=0;dashed=1;dashPattern=8 8;" target="if-silla">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="60.03" y="710.03" />
+              <mxPoint x="40.03" y="710.03" />
+              <mxPoint x="40.03" y="600.03" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-impl-v-silla" edge="1" parent="1" source="c-v-silla" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;endArrow=block;endFill=0;dashed=1;dashPattern=8 8;" target="if-silla">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="20" y="816.03" />
+              <mxPoint x="20" y="620.03" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-impl-a-silla" edge="1" parent="1" source="c-a-silla" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.7;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;dashed=1;dashPattern=8 8;" target="if-silla">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint y="902.03" />
+              <mxPoint y="640.03" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-impl-m-sofa" edge="1" parent="1" source="c-m-sofa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;endArrow=block;endFill=0;dashed=1;dashPattern=8 8;" target="if-sofa">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-impl-v-sofa" edge="1" parent="1" source="c-v-sofa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=block;endFill=0;dashed=1;dashPattern=8 8;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="if-sofa">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="816.03" />
+              <mxPoint x="340" y="610.03" />
+              <mxPoint x="380" y="610.03" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-impl-a-sofa" edge="1" parent="1" source="c-a-sofa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;endArrow=block;endFill=0;dashed=1;dashPattern=8 8;" target="if-sofa">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="905.9" />
+              <mxPoint x="350" y="579.69" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-impl-m-mesilla" edge="1" parent="1" source="c-m-mesilla" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;endArrow=block;endFill=0;dashed=1;dashPattern=8 8;" target="if-mesilla">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="726.03" />
+              <mxPoint x="680" y="580.03" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-impl-v-mesilla" edge="1" parent="1" source="c-v-mesilla" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;endArrow=block;endFill=0;dashed=1;dashPattern=8 8;" target="if-mesilla">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="816.03" />
+              <mxPoint x="670" y="620.03" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-impl-a-mesilla" edge="1" parent="1" source="c-a-mesilla" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.002;entryY=0.82;entryDx=0;entryDy=0;endArrow=block;endFill=0;dashed=1;dashPattern=8 8;entryPerimeter=0;" target="if-mesilla-methods">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="660.03" y="906.03" />
+              <mxPoint x="660.03" y="632.6" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
