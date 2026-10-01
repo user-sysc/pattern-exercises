@@ -1,0 +1,90 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Antes" id="builder-antes">
+    <mxGraphModel dx="1894" dy="1001" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="5080" pageHeight="5080" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="a-main" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="AntesMain" vertex="1">
+          <mxGeometry height="90" width="240" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="a-main-m" parent="a-main" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ main(args: String[]): void" vertex="1">
+          <mxGeometry height="56" width="240" y="26" as="geometry" />
+        </mxCell>
+
+        <mxCell id="a-ctrl" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="ComputadorController" vertex="1">
+          <mxGeometry height="110" width="320" x="360" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="a-ctrl-m1" parent="a-ctrl" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ mostrarGamer(): void" vertex="1">
+          <mxGeometry height="38" width="320" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="a-ctrl-m2" parent="a-ctrl" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ mostrarOficina(): void" vertex="1">
+          <mxGeometry height="38" width="320" y="64" as="geometry" />
+        </mxCell>
+
+        <mxCell id="a-computador" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Computador" vertex="1">
+          <mxGeometry height="450" width="720" x="760" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="a-comp-f1" parent="a-computador" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- cpu: String" vertex="1">
+          <mxGeometry height="26" width="720" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="a-comp-f2" parent="a-computador" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- ram: int" vertex="1">
+          <mxGeometry height="26" width="720" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="a-comp-f3" parent="a-computador" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- gpu: String" vertex="1">
+          <mxGeometry height="26" width="720" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="a-comp-f4" parent="a-computador" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- almacenamiento: String" vertex="1">
+          <mxGeometry height="26" width="720" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="a-comp-f5" parent="a-computador" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- fuente: String" vertex="1">
+          <mxGeometry height="26" width="720" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="a-comp-f6" parent="a-computador" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- wifi: boolean" vertex="1">
+          <mxGeometry height="26" width="720" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="a-comp-f7" parent="a-computador" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- bluetooth: boolean" vertex="1">
+          <mxGeometry height="26" width="720" y="182" as="geometry" />
+        </mxCell>
+        <mxCell id="a-comp-f8" parent="a-computador" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- refrigeracionLiquida: boolean" vertex="1">
+          <mxGeometry height="26" width="720" y="208" as="geometry" />
+        </mxCell>
+        <mxCell id="a-comp-f9" parent="a-computador" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- sistemaOperativo: String" vertex="1">
+          <mxGeometry height="26" width="720" y="234" as="geometry" />
+        </mxCell>
+        <mxCell id="a-comp-sep1" parent="a-computador" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="720" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="a-comp-c1" parent="a-computador" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Computador(cpu: String)" vertex="1">
+          <mxGeometry height="26" width="720" y="268" as="geometry" />
+        </mxCell>
+        <mxCell id="a-comp-c2" parent="a-computador" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Computador(cpu: String, ram: int)" vertex="1">
+          <mxGeometry height="26" width="720" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="a-comp-c3" parent="a-computador" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Computador(cpu: String, ram: int, gpu: String)" vertex="1">
+          <mxGeometry height="26" width="720" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="a-comp-c4" parent="a-computador" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Computador(cpu, ram, gpu, almacenamiento, fuente, ...)" vertex="1">
+          <mxGeometry height="26" width="720" y="346" as="geometry" />
+        </mxCell>
+        <mxCell id="a-comp-c5" parent="a-computador" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Computador(cpu, ram, gpu, almacenamiento, fuente, wifi, bluetooth, refrigeracionLiquida, sistemaOperativo)" vertex="1">
+          <mxGeometry height="40" width="720" y="372" as="geometry" />
+        </mxCell>
+        <mxCell id="a-comp-m" parent="a-computador" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ toString(): String" vertex="1">
+          <mxGeometry height="38" width="720" y="412" as="geometry" />
+        </mxCell>
+
+        <mxCell id="a-note" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=18;fillColor=#ffe6e6;strokeColor=#b85450;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontColor=#990000;" value="PROBLEMAS (sin patron)&lt;br&gt;&lt;br&gt;• Constructores telescopicos: uno por cada cantidad de parametros.&lt;br&gt;• Parametros posicionales: no se sabe que es cada argumento.&lt;br&gt;• Booleanos sin nombre: no se entiende que significa cada true/false.&lt;br&gt;• Facil equivocarse: cambiar el orden compila pero altera el objeto.&lt;br&gt;• Rigido: cada combinacion nueva obliga a otro constructor.&lt;br&gt;• Viola Open/Closed: agregar un atributo obliga a tocar las llamadas." vertex="1">
+          <mxGeometry height="260" width="600" x="760" y="560" as="geometry" />
+        </mxCell>
+
+        <mxCell id="a-e-main-ctrl" edge="1" parent="1" source="a-main" target="a-ctrl" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;dashed=1;dashPattern=8 8;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a-e-ctrl-comp" edge="1" parent="1" source="a-ctrl" target="a-computador" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;dashed=1;dashPattern=8 8;" value="&amp;laquo;create&amp;raquo;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
