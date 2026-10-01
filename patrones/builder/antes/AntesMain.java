@@ -11,7 +11,7 @@ public class AntesMain {
     public static void main(String[] args) {
         ComputadorController controller = new ComputadorController();
 
-        System.out.println("Computador sin Builder ===");
+        System.out.println("Computador sin Builder ");
         controller.mostrarGamer();
         System.out.println();
         controller.mostrarOficina();

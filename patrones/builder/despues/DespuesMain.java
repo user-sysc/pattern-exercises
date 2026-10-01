@@ -13,7 +13,7 @@ public class DespuesMain {
     public static void main(String[] args) {
         ComputadorController controller = new ComputadorController();
 
-        System.out.println("=== DESPUES: Computador con Builder ===");
+        System.out.println("Computador con Builder");
         controller.mostrarGamer();
         System.out.println();
         controller.mostrarOficina();
