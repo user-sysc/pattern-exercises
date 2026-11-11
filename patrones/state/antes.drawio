@@ -1,0 +1,90 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Antes" id="state-antes">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- AntesMain -->
+        <mxCell id="a-main" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="AntesMain" vertex="1">
+          <mxGeometry height="90" width="220" x="40" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a-main-m" parent="a-main" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ main(args: String[]): void" vertex="1">
+          <mxGeometry height="56" width="220" y="26" as="geometry" />
+        </mxCell>
+
+        <!-- DroneStatus (Enum) -->
+        <mxCell id="a-status" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&amp;lt;&amp;lt;enum&amp;gt;&amp;gt;&lt;br&gt;DroneStatus" vertex="1">
+          <mxGeometry height="160" width="200" x="320" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a-status-f1" parent="a-status" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ ON_GROUND" vertex="1">
+          <mxGeometry height="24" width="200" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="a-status-f2" parent="a-status" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ FLYING" vertex="1">
+          <mxGeometry height="24" width="200" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="a-status-f3" parent="a-status" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ EMERGENCY" vertex="1">
+          <mxGeometry height="24" width="200" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="a-status-sep" parent="a-status" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="200" y="112" as="geometry" />
+        </mxCell>
+        <mxCell id="a-status-m1" parent="a-status" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ getStateName(): String" vertex="1">
+          <mxGeometry height="32" width="200" y="120" as="geometry" />
+        </mxCell>
+
+        <!-- Drone (Monolithic with switch) -->
+        <mxCell id="a-drone" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Drone" vertex="1">
+          <mxGeometry height="220" width="340" x="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="a-drone-f1" parent="a-drone" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- state: DroneStatus" vertex="1">
+          <mxGeometry height="26" width="340" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="a-drone-sep" parent="a-drone" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="340" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="a-drone-m1" parent="a-drone" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Drone(initialState: DroneStatus)" vertex="1">
+          <mxGeometry height="26" width="340" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a-drone-m2" parent="a-drone" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ setState(state: DroneStatus): void" vertex="1">
+          <mxGeometry height="26" width="340" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="a-drone-m3" parent="a-drone" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ getState(): DroneStatus" vertex="1">
+          <mxGeometry height="26" width="340" y="112" as="geometry" />
+        </mxCell>
+        <mxCell id="a-drone-m4" parent="a-drone" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ fly(): void  // switch(state)" vertex="1">
+          <mxGeometry height="26" width="340" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="a-drone-m5" parent="a-drone" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ record(): void  // switch(state)" vertex="1">
+          <mxGeometry height="26" width="340" y="164" as="geometry" />
+        </mxCell>
+        <mxCell id="a-drone-m6" parent="a-drone" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ land(): void  // switch(state)" vertex="1">
+          <mxGeometry height="26" width="340" y="190" as="geometry" />
+        </mxCell>
+
+        <!-- Note of Problems -->
+        <mxCell id="a-note" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=18;fillColor=#ffe6e6;strokeColor=#b85450;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontColor=#990000;fontSize=12;" value="PROBLEMAS (sin patrón State)&lt;br&gt;&lt;br&gt;• &lt;b&gt;Violación de Open/Closed (OCP)&lt;/b&gt;: Agregar un nuevo estado (ej. LowBattery) obliga a modificar Drone y alterar TODOS los métodos (fly, record, land).&lt;br&gt;• &lt;b&gt;Violación de Single Responsibility (SRP)&lt;/b&gt;: Drone acumula el control del dron y las reglas/restricciones de cada estado.&lt;br&gt;• &lt;b&gt;Explosión de condicionales&lt;/b&gt;: Cada acción del dron requiere un switch(this.state) replicado.&lt;br&gt;• &lt;b&gt;Rigidez y difícil testeo&lt;/b&gt;: No se puede probar el comportamiento de un estado aislado sin instanciar la clase monolítica." vertex="1">
+          <mxGeometry height="200" width="600" x="320" y="300" as="geometry" />
+        </mxCell>
+
+        <!-- Edges -->
+        <mxCell id="a-e-main-ctrl" edge="1" parent="1" source="a-main" target="a-drone" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;dashed=1;dashPattern=8 8;" value="&amp;laquo;uses&amp;raquo;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="20" />
+              <mxPoint x="750" y="20" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="a-e-main-status" edge="1" parent="1" source="a-main" target="a-status" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;dashed=1;dashPattern=8 8;" value="&amp;laquo;uses&amp;raquo;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="a-e-drone-status" edge="1" parent="1" source="a-drone" target="a-status" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" value="- state">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
